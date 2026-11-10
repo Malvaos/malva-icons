@@ -1,0 +1,16 @@
+# Maintainer: Malva OS Team <https://github.com/Malvaos>
+pkgname=malva-icon-theme
+pkgver=0.2.0
+pkgrel=1
+pkgdesc="The Malva OS pure-SVG freedesktop icon theme"
+arch=('any')
+url="https://github.com/Malvaos/malva-icons"
+license=('GPL-3.0-or-later')
+depends=('hicolor-icon-theme' 'adwaita-icon-theme')
+makedepends=('python')
+options=('!strip')
+
+package() {
+  cd "$srcdir/.."
+  python3 tools/icons/install_theme.py --dest "$pkgdir/usr/share/icons" --no-cache
+}

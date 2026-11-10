@@ -1,0 +1,8 @@
+[package]
+name = "malva-tokens"
+version = "0.1.0"
+edition = "2021"
+description = "Design tokens and Balance-dial superellipse geometry constants for Malva OS"
+
+[lib]
+path = "src/lib.rs"

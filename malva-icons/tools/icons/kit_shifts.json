@@ -1,0 +1,66 @@
+{
+ "accessories-character-map": [
+  0.0,
+  1.0
+ ],
+ "applications-utilities": [
+  -1.0,
+  1.0
+ ],
+ "audio-headset": [
+  0.0,
+  -1.0
+ ],
+ "bluetooth-hardware-disabled": [
+  -1.0,
+  0.0
+ ],
+ "color-select": [
+  -1.0,
+  0.0
+ ],
+ "document-open-recent": [
+  -1.0,
+  0.0
+ ],
+ "go-jump": [
+  0.0,
+  -1.0
+ ],
+ "input-tablet": [
+  0.0,
+  1.0
+ ],
+ "list-remove-all": [
+  0.0,
+  -1.0
+ ],
+ "mail-replied": [
+  1.0,
+  0.0
+ ],
+ "mail-unread": [
+  0.0,
+  1.0
+ ],
+ "microphone-hardware-disabled": [
+  -1.0,
+  0.0
+ ],
+ "modem": [
+  0.0,
+  -1.0
+ ],
+ "view-sort-ascending": [
+  -1.0,
+  0.0
+ ],
+ "view-sort-descending": [
+  -1.0,
+  0.0
+ ],
+ "weather-few-clouds": [
+  0.0,
+  1.0
+ ]
+}

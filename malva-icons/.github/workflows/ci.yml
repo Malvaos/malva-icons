@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+
+jobs:
+  verify-theme:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install system libraries and Python dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y librsvg2-2 librsvg2-bin libcairo2 libgtk-3-0
+          pip install numpy pillow scipy playwright
+          playwright install --with-deps chromium
+      - name: Run geometry self-tests and unit tests
+        run: |
+          python3 tools/icons/selftest.py
+          python3 -m unittest discover -s tests -v
+      - name: Run full theme and icon verification suites
+        run: |
+          python3 tools/icons/check_glyphs.py
+          python3 tools/icons/check_apps.py
+          python3 tools/icons/check_objects.py
+          python3 tools/icons/check_tiles.py
+          python3 tools/icons/check_theme.py

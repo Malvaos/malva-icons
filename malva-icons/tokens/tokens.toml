@@ -1,0 +1,34 @@
+# Malva OS Design Tokens — Brand Palette & Balance Geometry
+
+[geometry]
+corner_exponent = 4.0
+app_tile_exponent = 5.0
+symbolic_grid = 24
+scalable_canvas = 1024
+
+[brand.plum]
+light = "#A24E8C"
+body = "#6F2B5F"
+deep = "#7C3369"
+dark = "#4E1D42"
+lid = "#D99FCB"
+mark_edge = "#8C3274"
+shadow = "#2A0A24"
+
+[brand.orchid]
+front_top = "#D06BBA"
+front_bottom = "#A64C93"
+back_top = "#9A4585"
+back_bottom = "#7C3369"
+engraved_ink = "#3A1232"
+
+[brand.lilac]
+top = "#FBF3FA"
+bottom = "#DEC3E0"
+fold = "#CDAACF"
+
+[brand.leaf]
+on_tile = "#9DBB7E"
+on_lilac = "#4F7A2F"
+sheet_top = "#B4CF98"
+sheet_bottom = "#8FB06D"

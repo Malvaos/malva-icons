@@ -1,0 +1,24 @@
+# Python byte-compile & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build & export outputs
+build/
+dist/
+out/
+png-export/
+assets/app-icons/
+assets/object-icons/
+
+# Rust cargo artifacts (crates/malva-tokens)
+target/
+
+# OS & editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~
